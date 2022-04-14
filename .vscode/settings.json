@@ -2,6 +2,14 @@
     "cSpell.words": [
         "conv",
         "nbre",
+        "pyplot",
         "vorletzt"
+    ],
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true,
+    "python.linting.pylintArgs": [
+        "--disable=c0103",
+        "--disable=C0111",
+        "--enable=W0614"
     ]
 }
