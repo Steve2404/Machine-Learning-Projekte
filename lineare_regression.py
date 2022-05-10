@@ -34,7 +34,7 @@ def r2_score(X, y, theta):
     r2 = np.sqrt(1 - (num/denum))
     return r2
 
-np.linalg.c
+
 matriceX = np.array([[2, 2, 3],[0, 4, 1], [6, 2, 1]])
 vektorY = np.array([1, 2, 1])
 
