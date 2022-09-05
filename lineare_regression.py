@@ -4,7 +4,7 @@
 
 import numpy as np
 
-def extend_matrix(X):
+def extend_matrix(X):  
     # TODO: setze X_ext
     One = np.ones((X.shape[0], 1))
     X_ext = np.concatenate((One, X), axis=1)
