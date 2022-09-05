@@ -79,7 +79,7 @@ X = np.array([[1,2],
 Y = np.array([1,0,0])
 theta = np.array([1, 2, 0])
 cost = logistic_cost_function(X, Y, theta)
-#print(f" cost fonktion: {cost[0]} und gradient : {cost[1]}")
+#print(f" cost fonction: {cost[0]} und gradient : {cost[1]}")
 
 
 
@@ -118,13 +118,14 @@ def LogisticRegression_fit(X,y,eta,tol):
             theta = theta - eta*(logistic_cost_function(X, y, theta)[1])
             J = logistic_cost_function(X,y,theta)[0]
             print(f"Les valeur de Theta: {theta[0]} J={J}")
-            #Ici on doit comparer le valeur de l ancien J avec la nouvelle valeur, si elle est grande alors on arrete tout avec raise.
+            #Ici on doit comparer le valeur de l ancien J avec la nouvelle valeur, si elle est grande alors on arrête tout avec raise.
         except Exception as ex:
             raise ex
     return theta, J
 
 fit = LogisticRegression_fit(X, Y, 10, 1e-4)
 print(f"neue Theta: {fit[0]}")
+
 
 #%% LogisticRegression_predict
 
