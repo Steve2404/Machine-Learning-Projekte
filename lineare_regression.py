@@ -29,7 +29,7 @@ def LR_predict(X, theta):
 def r2_score(X, y, theta):
     # TODO: berechne r2
     r1 = LR_predict(X, theta)
-    num = ((r1 - y) ** 2).sum()
+    num = ((r1 - y) ** 2).sum() 
     denum = ((y - np.mean(y))**2).sum()
     r2 = np.sqrt(1 - (num/denum))
     return r2
